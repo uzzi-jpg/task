@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Task Tracker</h1>
+
+    <div class="board">
+        <div class="column">
+            <h2>To Do</h2>
+            <div id="todo"></div>
+            <button class="add-btn" onclick="showForm('todo')">+ Add Task</button>
+            <div id="form-todo" class="task-form" >
+                <input type="text" id="title-todo" class="task-input" placeholder="Task Title">
+                <textarea id="desc-todo" class="td" placeholder="Task Description"></textarea>
+                <button class="form-btn" onclick="addTask('todo')">Save</button>
+                <button class="form-btn" onclick="hideForm('todo')">Cancel</button>
+            </div>
+        </div>
+        <div class="column">
+            <h2>In Progress</h2>
+            <div id="progress"></div>
+            <button class="add-btn" onclick="showForm('progress')">+ Add Task</button>
+            <div id="form-progress" class="task-form" >
+                <input type="text" id="title-progress" class="task-input" placeholder="Task Title">
+                <textarea id="desc-progress" class="td" placeholder="Task Description"></textarea>
+                <button class="form-btn" onclick="addTask('progress')">Save</button>
+                <button class="form-btn" onclick="hideForm('progress')">Cancel</button>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Done</h2>
+            <div id="done"></div>
+            <button class="add-btn" onclick="showForm('done')">+ Add Task</button>
+            <div id="form-done" class="task-form" >
+                <input type="text" id="title-done" class="task-input" placeholder="Task Title">
+                <textarea id="desc-done" class="td" placeholder="Task Description"></textarea>
+                <button class="form-btn" onclick="addTask('done')">Save</button>
+                <button class="form-btn" onclick="hideForm('done')">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
