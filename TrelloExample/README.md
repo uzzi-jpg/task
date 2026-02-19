@@ -10,7 +10,7 @@ A basic task tracking app like Trello.
 
 ## Quick Start
 
-### Option 1: Just HTML
+### Just HTML
 
 1. Open `index.html` in your browser
 2. Tasks save automatically to your browser
