@@ -10,24 +10,10 @@ A basic task tracking app like Trello.
 
 ## Quick Start
 
-### Option 1: Just HTML
+### Just HTML
 
 1. Open `index.html` in your browser
 2. Tasks save automatically to your browser
-
-### Option 2: With Python Backend
-
-1. Install Flask:
-
-   ```bash
-   pip install Flask flask-cors
-   ```
-
-2. Run the server:
-
-   ```bash
-   python app.py
-   ```
 
 3. Open `index.html` in your browser
 
@@ -35,7 +21,6 @@ A basic task tracking app like Trello.
 
 - `index.html` - The webpage
 - `app.js` - JavaScript for tasks and drag-drop
-- `app.py` - Python Flask backend
 - `requirements.txt` - Python packages needed
 
 ## How to Use
@@ -43,8 +28,6 @@ A basic task tracking app like Trello.
 1. Click "+ Add Task" to create a task
 2. Drag tasks between columns to change status
 3. Click "Delete" to remove a task
-
-## API Endpoints (if using backend)
 
 - `GET /tasks` - Get all tasks
 - `POST /tasks` - Save all tasks
